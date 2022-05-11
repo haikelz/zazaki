@@ -39,4 +39,3 @@ const Kontak = () => {
 };
 
 export default Kontak;
-Link;
