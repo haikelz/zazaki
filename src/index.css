@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  @apply dark:bg-slate-900;
+}
+
+.line {
+  position: relative;
+}
+
+.line:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #f05454;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  border-radius: 20px;
+}
+
+.line:hover:after {
+  width: 100%;
+  left: 0;
+}
