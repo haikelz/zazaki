@@ -1,4 +1,5 @@
 import { FiGithub, FiLink } from "solid-icons/fi";
+import ProjectsImage from "../../assets/Project.jpg";
 
 const ProjectsList = () => {
   const images = [
@@ -13,9 +14,9 @@ const ProjectsList = () => {
     <>
       {images.map((image: any, index: number) => (
         <div class="rounded-lg overflow-hidden bg-slate-200 dark:bg-gray-800 border-[0.5px] border-gray-500">
-          <img src="/src/assets/Project.jpg" width="600px" height="400px" />
+          <img src={ProjectsImage} width="600px" height="400px" />
           <div class="p-2">
-            <h1 class="text-lg font-semibold">Project {index + 1}</h1>
+            <h1 class="text-lg font-semibold">{image.ket}</h1>
             <p class="mt-1 text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi.
             </p>

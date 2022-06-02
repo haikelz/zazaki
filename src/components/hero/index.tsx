@@ -1,7 +1,9 @@
+import HeroImage from "../../assets/Hero.png";
+
 const Hero = () => {
   return (
     <div class="container flex flex-col md:flex-row justify-between items-center">
-      <img class="w-96" src="/src/assets/Hero.png" alt="Hero" />
+      <img class="w-96" src={HeroImage} alt="Hero" />
 
       <div class="text-center md:text-justify">
         <h1 class="text-3xl font-bold">Hello, There!</h1>
